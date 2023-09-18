@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #installed apps
     'rest_framework',
-
+    'autoslug',
     #my apps
     'apps.product.apps.ProductConfig',
 

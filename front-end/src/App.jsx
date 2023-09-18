@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import HomePage from './pages/HomePage';
+import React from 'react'
+import NavBar from './components/NavBar'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <HomePage />
-        
-      </div>
-    );
-  } 
+function App() {
+  return (
+    <>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<HomePage/>} exact/>
+    </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
