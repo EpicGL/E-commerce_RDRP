@@ -21,7 +21,10 @@ class Product(models.Model):
     slug = AutoSlugField(populate_from='name', unique=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
     tags = models.ManyToManyField(Tag)
-
+    date = models.DateField(auto_now=True, null=True, blank=True)
+    updated = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    class Meta:
+        ordering = ['id']
 
     def __str__(self):
         return self.name
@@ -31,7 +34,7 @@ class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     
     class Meta:
-        ordering: 'id'
+        ordering = ['id']
 
     def __str__(self):
         return f"image of {self.product.name}"
