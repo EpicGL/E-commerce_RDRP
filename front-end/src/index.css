@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.bg-dark-blue{
+    background-color: #14618F;
+}
+
+.btn-blue{
+    background-color: #1168af;
+    color: white;
+    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    border: 0;
+}
+
+.nav-navbar{
+    background-color: #00000022;
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    top: 0;
+    z-index: 998;
+    transition: 0.32s ease-in-out;
+}
+
+@media (width < 993px) {
+    .nav-navbar{
+        background-color: #14618F;
+        padding: 5px 0;
+    }
+}
+
+.scrolled{
+    padding: 0px 0;
+    background-color: #14618F;
+
+}
+.cart-top{
+    position: fixed;
+    background-color: #0000007d;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.cart-side{
+    position: inherit;
+    background-color: white;
+    height: 100vh;
+    width: 50vh;
+    padding-top: 1rem;
+    z-index: 9999;
+    right: 0;
+}
+
+
+
+.banner{
+    margin-top: 0;
+    padding: 85% 0 90px 0;
+    background-image:  linear-gradient(90deg,#14708f9c, #14628f9e,#15159b9c  ), url(./assets/img/ernest-paul.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn-trans{
+    border: solid 1px white;
+    color:white;
+    transition: 0.3s ease-in-out;
+}
+.btn-trans:hover{
+    background-color: white;
+    color: #000000;
+}
+.btun-white{
+    background-color: white;
+    font-weight: 500;
+    padding: 10px 25px 10px 25px;
+    transition: 0.4s ease-in-out;
+    border: 2px solid white;
+}
+.btun-white:hover{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media (width > 992px) {
+    
+    .banner{
+        padding: 120px 0 90px 0;
+    }
+}
+
+.offer-card{
+    padding-top: 1rem;
+    height: 480px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.offer-card img{
+    height: 480px;
+    width: 350px;
+    
+}
+.offer-card-context{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: #00000087;
+}
+.offer-card-conWtext p {
+    margin-top: 1.3rem;
+}
+.products{
+    background-color: #00000010;
+}
+
+
+.product-card{
+    height: 10rem;
+}
+
+@media (max-width < 500px) {
+
+    .product-card{
+        height: 25rem;
+    }
+}
+
+.limited-offer-card{
+    height: 30rem;
+    background-image: linear-gradient(0deg, rgba(0, 128, 255, 0.4),rgba(0, 128, 255,0.4)), url(./assets/img/pexels-michelangelo-buonarroti.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.limited-offer-context{
+    padding: 5rem 0 0 4rem;
+}
+
+.banner2-img{
+    max-width: 5rem;
+}
+.footer{
+    background-color: #00000010;
+    padding-top: 2rem;
+}
+.btn-sub{
+    background-color: #2186c0;
+    color: white;
+    padding: 15px 30px 15px 30px ;
+    border: 0;
+}
+.footer-input{
+    height: 3.5rem;
+}
+
+/* *** About Us Page Css *** */
+
+.banner-about{
+    margin-top: 0;
+    padding: 85% 0 90px 0;
+    background-image:  linear-gradient(90deg,#14708f9c, #14628f9e,#15159b9c  ), url(./assets/img/ivan-samkov.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-about h1 {
+    font-size: 3.5rem;
+}
+
+@media (width > 992px) {
+    
+    .banner-about{
+        padding: 120px 0 120px 0;
+        height: 50vh;
+    }
+    .banner-about h1 {        
+        font-size: 5rem;
+    }
+}
+
+.banner-contact{
+    padding: 85% 0 90px 0;
+    background-color: #000000;
+    background-image:  linear-gradient(90deg,#14708f9c, #14628f9e,#15159b9c  ), url(./assets/img/christina-morillo-1181438.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.banner-contact h1 {
+    font-size: 3.5rem;
+}
+
+@media (width > 992px) {
+    
+    .banner-contact{
+        padding: 120px 0 120px 0;
+        height: 50vh;
+    }
+    .banner-contact h1 {        
+        font-size: 5rem;
+    }
+}
+
+
+.login-card{
+    margin-top: 30vh;
+    
+}
+.register-card{
+    margin-top: 25vh;
+    
+}
