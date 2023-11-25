@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     # my app
     'api.apps.ApiConfig',
+    'myauth.apps.MyauthConfig',
     'cart.apps.CartConfig',
     'product.apps.ProductConfig',
 
@@ -46,6 +47,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:9000",
 ]
 
+AUTH_USER_MODEL = 'myauth.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
