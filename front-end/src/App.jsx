@@ -5,8 +5,7 @@ import Login from './pages/login/AuthPage'
 import AboutUs from './pages/about/AboutUs'
 import Contact from './pages/contact/Contact'
 import EveryThing from './pages/everything/EveryThing'
-
-
+import UserPage from './pages/user/UserPage'
 
 function App() {
   return (
@@ -15,8 +14,9 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path='/about' element={<AboutUs/>} />
-        <Route path='/login' element={<Login/>} />
+        <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Login/>} />
+        <Route path='/profile' element={<UserPage />} />
         <Route path='/contact-us' element={<Contact/>} />
         <Route path='/everything' element={<EveryThing/>} />
       </Routes>

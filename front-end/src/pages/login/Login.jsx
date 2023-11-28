@@ -33,6 +33,7 @@ const Login = () => {
                     console.log('access: ' + localStorage.getItem('access'))
                     console.log('refresh: ' + localStorage.getItem('refresh'))
                     navigate('/')
+                    window.location.reload();
                 } else {
                     document.getElementById('message').innerText = 'Your Email or Password is wrong'
                 }

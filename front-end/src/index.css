@@ -219,3 +219,8 @@
     margin-top: 25vh;
     
 }
+.user-page-banner{
+    background-color: #1168af;
+    min-height: 100px;
+    top: -100px;
+}

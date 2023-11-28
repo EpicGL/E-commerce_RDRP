@@ -1,6 +1,7 @@
 import React, {useEffect , useState} from 'react'
 import { Row, Col } from 'react-bootstrap'
 import crossSVG from '../../assets/svg/plus-large.svg'
+import ProductList from './ProductList'
 
 const Cart = ({cartState , setCartState}) => {
     
@@ -15,11 +16,11 @@ const Cart = ({cartState , setCartState}) => {
                     </div>
                     <hr />
                     <div>
-                        No Product on Cart
+                        {<ProductList/>}
                     </div>
                 </Col>
                 <Col className='position-absolute bottom-0 p-2'>
-                    <button className='form-control btn btn-primary'>CONTINUE SHOPPING</button>
+                    <button onClick={() => setCartState(false)} className='form-control btn btn-primary' >CONTINUE SHOPPING</button>
                 </Col>
             </Row>
         </div>

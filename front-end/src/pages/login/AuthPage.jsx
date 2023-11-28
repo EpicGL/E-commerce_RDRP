@@ -20,12 +20,15 @@ const AuthPage = () => {
 
         }
     }, [page])
-    
+
+
+
+
     return (
         <section>
             <div className="container">    
                 <Row className={authFrom == 'login' ? 'justify-content-center login-card' : 'justify-content-center register-card'}>
-                  
+
                     <Col ms={11} md={8} lg={5}>
                         <div className="card card-body shadow ">
 

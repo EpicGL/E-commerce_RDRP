@@ -3,9 +3,8 @@ import {Navbar, Nav, Container} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import menuIcon from '../../assets/svg/menu-icon.svg'
 import cartIcon from '../../assets/svg/cart-shopping-icon.svg'
-import profileIcon from '../../assets/svg/user-person.svg'
 import Cart from '../cart/Cart'
-
+import User from './User';
 
 const NavBar = () => {
   
@@ -37,45 +36,42 @@ const NavBar = () => {
   }, [])
 
   return (
-      <>
-        <Navbar expand="lg" className={scrolled ? 'nav-navbar scrolled': 'nav-navbar'} variant="dark">
-          <Container fluid>
-            <Navbar.Brand href="/">
-              <h3>MWS</h3>
-            </Navbar.Brand>
-                    <Navbar.Toggle style={{border:'solid 1px #00000000'}} aria-controls="navbar-collapse-id">
-                      <span><img style={{maxWidth:'35px'}} src={menuIcon} alt="" /></span>
-                    </Navbar.Toggle>
-                  <Navbar.Collapse id="navbar-collapse-id">
-                      <Nav className='mx-auto me-5'>
-                        <Nav.Link className='nav-link active' as={Link} to="/everything">EVERYTHING</Nav.Link>
-                        <Nav.Link className='nav-link active' as={Link} to="/women">WOMEN</Nav.Link>
-                        <Nav.Link className='nav-link active' as={Link} to="/men">MEN</Nav.Link>
-                        <Nav.Link className='nav-link active' as={Link} to="/accessories">ACCESSORIES</Nav.Link>
-                      </Nav>
-                      <Nav className='me-auto'>
-                        <Nav.Link className='nav-link' as={Link} to="/about">ABOUT</Nav.Link>
-                        <Nav.Link className='nav-link' as={Link} to="/contact-us">CONTACT US</Nav.Link>
-                      </Nav>
-                      <Nav.Item>
-                      <span className='d-flex text-white' style={{cursor:'pointer'}}  >
-                          <div className='me-4 d-flex align-items-center'>$0.00</div>
-                          <div className='position-relative p-2'>
-                          <img style={{maxWidth:'40px'}} onClick={() => setCartState(true)} src={cartIcon} alt="" />
-                          <p id='cart-cunt' className='position-absolute bg-danger' style={{right:'0', top:'0' , borderRadius:'50vh', padding:'0 3px 0 3px'}} ></p>
-                          </div>
-                      
-                        <Nav.Link className='nav-link active m-2' as={Link} to="/login">
-                        <img style={{maxWidth:'40px'}}  src={profileIcon} alt="" />
-                        </Nav.Link>
-                      
-                      </span>       
-                      </Nav.Item>
-                  </Navbar.Collapse>
-              </Container>
-        </Navbar>
-        <Cart cartState={cartState} setCartState={setCartState} />
-      </>
+    <>
+      <Navbar expand="lg" className={scrolled ? 'nav-navbar scrolled': 'nav-navbar'} variant="dark">
+        <Container fluid>
+          <Navbar.Brand href="/">
+            <h3>MWS</h3>
+          </Navbar.Brand>
+                  <Navbar.Toggle style={{border:'solid 1px #00000000'}} aria-controls="navbar-collapse-id">
+                    <span><img style={{maxWidth:'35px'}} src={menuIcon} alt="" /></span>
+                  </Navbar.Toggle>
+                <Navbar.Collapse id="navbar-collapse-id">
+                    <Nav className='mx-auto me-5'>
+                      <Nav.Link className='nav-link active' as={Link} to="/everything">EVERYTHING</Nav.Link>
+                      <Nav.Link className='nav-link active' as={Link} to="/women">WOMEN</Nav.Link>
+                      <Nav.Link className='nav-link active' as={Link} to="/men">MEN</Nav.Link>
+                      <Nav.Link className='nav-link active' as={Link} to="/accessories">ACCESSORIES</Nav.Link>
+                    </Nav>
+                    <Nav className='me-auto'>
+                      <Nav.Link className='nav-link' as={Link} to="/about">ABOUT</Nav.Link>
+                      <Nav.Link className='nav-link' as={Link} to="/contact-us">CONTACT US</Nav.Link>
+                    </Nav>
+                    <Nav.Item>
+                    <span className='d-flex text-white' style={{cursor:'pointer'}}  >
+                        <div className='me-4 d-flex align-items-center'>$0.00</div>
+                        <div className='position-relative p-2'>
+                        <img style={{maxWidth:'40px'}} onClick={() => setCartState(true)} src={cartIcon} alt="" />
+                        <p id='cart-cunt' className='position-absolute bg-danger' style={{right:'0', top:'0' , borderRadius:'50vh', padding:'0 3px 0 3px'}} ></p>
+                        </div>
+                        {<User/>}    
+                                            
+                    </span>       
+                    </Nav.Item>
+                </Navbar.Collapse>
+            </Container>
+      </Navbar>
+      <Cart cartState={cartState} setCartState={setCartState} />
+    </>
   )
 }
 
