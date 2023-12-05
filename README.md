@@ -1,4 +1,3 @@
-````markdown
 # E-commerce_RDRP
 
 ## FrontEnd
@@ -10,6 +9,7 @@ cd front-end/
 npm install
 npm run dev
 ```
+
 ````
 
 ## BackEnd
@@ -42,8 +42,4 @@ python manage.py runserver
 ```
 
 Make sure you are in the `back-end` directory in the terminal, or it will not work.
-
-```
-
-This structure makes it easy for users to copy and paste the commands directly from the README.md file. Feel free to modify it further based on your preferences.
-```
+````
