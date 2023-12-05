@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import Product from './Product'
 import './style.css'
 
-const EveryThing = () => {
+const Women = () => {
 
     useEffect(() => {
-        document.title = 'Everything' 
+        document.title = 'Women' 
         document.body.style.backgroundColor = '#bababa'
     },[])
     return (
@@ -17,4 +17,4 @@ const EveryThing = () => {
   )
 }
 
-export default EveryThing
+export default Women

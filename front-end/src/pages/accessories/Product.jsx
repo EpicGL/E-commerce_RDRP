@@ -11,7 +11,7 @@ const Product = () => {
 
     const [filter , setFilter] = useState(filters)
     const [gender, setGender] = useState('None')
-    const [accessories, setAccessories] = useState('None')
+    const [accessories, setAccessories] = useState('Yes')
     const [products, setProduct] = useState([])
 
     const getProducts = async () => {

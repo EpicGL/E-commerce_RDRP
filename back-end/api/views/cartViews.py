@@ -36,7 +36,7 @@ def add_or_to_cart(request):
                     order_item = existing_order_item
                     return Response({"Item added"})
                 elif action == 'decrement':
-                    if existing_order_item > 1:
+                    if existing_order_item.quantity > 1:
                         existing_order_item.quantity -= 1
                         existing_order_item.save()
                         order_item = existing_order_item

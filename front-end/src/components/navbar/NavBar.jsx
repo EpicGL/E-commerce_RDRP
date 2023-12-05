@@ -10,13 +10,13 @@ const NavBar = () => {
   
   const [scrolled, setScrolled] = useState(false);
   const [cartState, setCartState] = useState(false)
-  const [cartCunt, setCartCumt] = useState()
+  const [cartCunt, setCartCumt] = useState(0)
 
   useEffect(() => {
     if (cartCunt > 0) {
       document.getElementById('cart-cunt').innerText = cartCunt
     } else {
-      document.getElementById('cart-cunt').innerText = '99'
+      document.getElementById('cart-cunt').innerText = '0'
     }
 
   },[cartCunt])
@@ -61,7 +61,7 @@ const NavBar = () => {
                         <div className='me-4 d-flex align-items-center'>$0.00</div>
                         <div className='position-relative p-2'>
                         <img style={{maxWidth:'40px'}} onClick={() => setCartState(true)} src={cartIcon} alt="" />
-                        <p id='cart-cunt' className='position-absolute bg-danger' style={{right:'0', top:'0' , borderRadius:'50vh', padding:'0 3px 0 3px'}} ></p>
+                        <div id='cart-cunt' className='position-absolute bg-danger' style={{right:'0', top:'0' , borderRadius:'50vh', padding:'0 3px 0 3px'}} ></div>
                         </div>
                         {<User/>}    
                                             

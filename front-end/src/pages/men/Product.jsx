@@ -10,7 +10,7 @@ const Product = () => {
     }
 
     const [filter , setFilter] = useState(filters)
-    const [gender, setGender] = useState('None')
+    const [gender, setGender] = useState('Male')
     const [accessories, setAccessories] = useState('None')
     const [products, setProduct] = useState([])
 

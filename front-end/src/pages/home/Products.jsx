@@ -37,7 +37,7 @@ const Products = () => {
                 </Row>
 
             
-                <div className="limited-offer-card text-white">
+                <div className="limited-offer-card text-white mt-4">
                     <Row>
                         <Col lg={8} md={12} className='limited-offer-context'>
                             <h3>Limited Time Offer</h3>
