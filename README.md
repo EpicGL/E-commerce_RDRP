@@ -10,8 +10,6 @@ npm install
 npm run dev
 ```
 
-````
-
 ## BackEnd
 
 To get started with the back end, follow these commands in the terminal:
@@ -42,4 +40,7 @@ python manage.py runserver
 ```
 
 Make sure you are in the `back-end` directory in the terminal, or it will not work.
-````
+
+```
+
+```
