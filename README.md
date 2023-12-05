@@ -1,20 +1,49 @@
+````markdown
 # E-commerce_RDRP
 
-# FrontEnd
+## FrontEnd
 
-go to the terminal and run those commands to get started
+To get started with the front end, follow these commands in the terminal:
 
-$ cd front-end/
-/n npm install
-$ npm run dev
+```bash
+cd front-end/
+npm install
+npm run dev
+```
+````
 
-# BackEnd
+## BackEnd
 
-go to the terminal and run those commands to get started
+To get started with the back end, follow these commands in the terminal:
 
-$ cd back-end
-$ pip install virtualenv
-$ virtualenv venv
-(then active the virtual env if you're in vs code then use ctrl+shift+p and select the venv of if on terminal the on backend venv/bin/activate)
-$ pip install -r requirement.txt
-$ py manage.py runserver or python manage.py runserver or python3 manage.py runserver (remmamber you have to be on backend on tarminal or it will not work)
+```bash
+cd back-end
+pip install virtualenv
+virtualenv venv
+```
+
+Activate the virtual environment. If you're using VS Code, use `Ctrl+Shift+P` and select the virtual environment. If you're using the terminal:
+
+```bash
+source venv/bin/activate   # For Unix/Linux
+.\venv\Scripts\activate    # For Windows
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirement.txt
+```
+
+Run the Django development server:
+
+```bash
+python manage.py runserver
+```
+
+Make sure you are in the `back-end` directory in the terminal, or it will not work.
+
+```
+
+This structure makes it easy for users to copy and paste the commands directly from the README.md file. Feel free to modify it further based on your preferences.
+```
