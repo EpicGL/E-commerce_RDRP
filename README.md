@@ -39,8 +39,4 @@ Run the Django development server:
 python manage.py runserver
 ```
 
-Make sure you are in the `back-end` directory in the terminal, or it will not work.
-
-```
-
-```
+Make sure you are in the `back-end` and the `front-end` directory in the terminal, or it will not work.
