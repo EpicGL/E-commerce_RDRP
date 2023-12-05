@@ -5,7 +5,7 @@
 go to the terminal and run those commands to get started
 
 $ cd front-end/
-$ npm install
+/n npm install
 $ npm run dev
 
 # BackEnd
